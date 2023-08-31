@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        <app-search (teamId)="deleteTeamSearch($event)"></app-search>
+    </div>
+    <div>
+        <app-date-filter></app-date-filter>
+    </div>
+</div>
+<div class="container">
+    <div class="to-actions">
+        <a routerLink="/create">Crear equipo</a>
+    </div>
+    <div class="teams--grid">
+        <app-team *ngFor="let team of teams" [team]="team" (teamId)="deleteTeam($event)"></app-team>
+    </div>
+</div>

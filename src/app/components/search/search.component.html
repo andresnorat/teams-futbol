@@ -1,0 +1,5 @@
+<div class="container">
+    <input class="serach" type="search" [formControl]="searchField" placeholder="Search">
+    <app-team *ngIf="showTeam" [team]="team" (teamId)="deleteItem($event)"></app-team>
+    <p *ngIf="!showTeam">{{this.messageError}}</p>
+</div>

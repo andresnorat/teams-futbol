@@ -1,0 +1,31 @@
+.to-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  }
+
+.to-actions a {
+    text-decoration: none;
+    color: white;
+    padding: 4px 20px;
+    background-color: rgb(58, 121, 66);
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.container {
+  width: 75%;
+  margin: 30px auto;
+}
+
+
+
+.teams--grid {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 235px);
+    gap: 18px;
+    place-content: center;
+  }
+  

@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+}
+
+.serach {
+    border-radius: 5px;
+    width: 350px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+form {
+    width: 350px;
+    display: block;
+    margin: 10px auto;
+}
+
+form input {
+    width: 100%;
+}
+
+
+form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 5px;
+}
+
+.warrnig {
+    font-size: 12px;
+    color: rgb(252, 71, 71);
+}
+
+
+.createButton {
+    color: white;
+    padding: 4px 20px;
+    background-color: rgb(58, 121, 66);
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+}
+
+.editButton {
+    color: white;
+    padding: 4px 20px;
+    background-color: rgb(81, 81, 245);
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+}

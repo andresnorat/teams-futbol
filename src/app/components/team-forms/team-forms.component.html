@@ -1,0 +1,46 @@
+<form [formGroup]="formTeam" (ngSubmit)="save()">
+    <label for="">Nombre</label>
+    <input type="text" formControlName="nombre" name="nombre">
+    <div class="warrnig" *ngIf="nombre?.touched && nombre?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Estadio</label>
+    <input type="text" formControlName="estadio" name="estadio">
+    <div class="warrnig" *ngIf="estadio?.touched && estadio?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Sitio Web</label>
+    <input type="text" formControlName="sitioWeb" name="sitioWeb">
+    <div class="warrnig" *ngIf="sitioWeb?.touched && sitioWeb?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Nacionalidad</label>
+    <input type="text" formControlName="nacionalidad" name="nacionalidad">
+    <div class="warrnig" *ngIf="nacionalidad?.touched && nacionalidad?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Fecha de fundacion</label>
+    <input type="date" formControlName="fundacion" name="fundacion">
+    <div class="warrnig" *ngIf="fundacion?.touched && fundacion?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Entrenador</label>
+    <input type="text" formControlName="entrenador" name="entrenador">
+    <div class="warrnig" *ngIf="entrenador?.touched && entrenador?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Capacidad</label>
+    <input type="number" formControlName="capacidad" name="capacidad">
+    <div class="warrnig" *ngIf="capacidad?.touched && capacidad?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <label for="">Valor</label>
+    <input type="number" formControlName="valor" name="valor">
+    <div class="warrnig" *ngIf="valor?.touched && valor?.invalid">
+        <p>Campo requerio</p>
+    </div>
+    <button type="submit" [ngClass]="!teamId ? 'createButton' : 'editButton'">
+        <span *ngIf="!teamId">Crear Equipo</span>
+        <span *ngIf="teamId">Actualizar Equipo</span>
+    </button>
+</form>

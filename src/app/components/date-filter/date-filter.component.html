@@ -1,0 +1,13 @@
+
+  <form>
+    <label for="startDate">Fecha de inicio:</label>
+    <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate">
+    <label for="endDate">Fecha final:</label>
+    <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate">
+    <button type="button"(click)="filterByDate()">Filtrar</button>
+    <button type="button" (click)="cleanByTeams()" >Limpiar</button>
+  </form>
+  
+  <app-team *ngFor="let team of teams" [team]="team" [showDelete]="false" ></app-team>  
+
+  

@@ -1,0 +1,9 @@
+<div class="team-info">
+    <h2>{{team.nombre}}</h2>
+    <p>{{team.estadio}}</p>
+    <p>{{team.nacionalidad}}</p>
+    <div class="actions">
+        <a [routerLink]="['edit', team.id]">Editar</a>
+        <button *ngIf="showDelete" (click)="deleteTeam(team.id)">Eliminar</button>
+    </div>
+</div>  
